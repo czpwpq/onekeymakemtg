@@ -1,3 +1,5 @@
+FORK的版本，修复了一键安装下载包不是最新安装失败的问题
+
 # 编译安装最新版 mtproxy-go 一键脚本   
 因为go版mtproxy代码更新了抗重放攻击等功能后，原作者没有直接放出编译好的程序，所以根据逗比原版一键脚本魔改，直接拉取最新代码进行编译，**最新版已经支持 TLS 伪装**
    
@@ -8,7 +10,7 @@
 下载安装:
 
 ```bash
-wget -N --no-check-certificate https://github.com/whunt1/onekeymakemtg/raw/master/mtproxy_go.sh && chmod +x mtproxy_go.sh && bash mtproxy_go.sh
+wget -N --no-check-certificate https://github.com/czpwpq/onekeymakemtg/raw/master/mtproxy_go.sh && chmod +x mtproxy_go.sh && bash mtproxy_go.sh
 ```
 
 > 配置文件在 `/usr/local/mtproxy-go/mtproxy.conf` ，可以手动修改，配置项详细介绍参见 [mtg 文档](https://github.com/9seconds/mtg#environment-variables)
